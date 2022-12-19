@@ -6,7 +6,7 @@
 /*   By: yecnam <yecnam@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/11 21:50:24 by yecnam            #+#    #+#             */
-/*   Updated: 2022/11/14 19:12:27 by yecnam           ###   ########.fr       */
+/*   Updated: 2022/12/19 19:30:54 by yecnam           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,9 +15,13 @@
 void	*ft_calloc(size_t count, size_t size)
 {
 	unsigned char	*a;
-	size_t			sum;
+	long long		sum;
+	long long		c;
+	long long		s;
 
-	sum = count * size;
+	c = (long long)count;
+	s = (long long)size;
+	sum = c * s;
 	a = (unsigned char *)malloc(sum);
 	if (!a)
 		return (0);
